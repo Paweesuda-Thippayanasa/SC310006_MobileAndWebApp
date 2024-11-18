@@ -1,0 +1,27 @@
+:root{
+    --font-size-header-topic:1.5rem;
+    --font-size-sub-topic:1.3rem;
+}
+
+* {
+	margin: 0 ;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+.container {
+	display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    padding: 1rem;
+    
+}
+
+
+.container h1{
+    font-size: var(--font-size-header-topic);
+}
+.container h2{
+    font-size: var(--font-size-sub-topic);
+}
