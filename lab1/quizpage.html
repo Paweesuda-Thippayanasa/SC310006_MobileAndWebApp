@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Quiz</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container my-4">
+        <h1 class="text-center mb-4">Online Quiz</h1>
+    
+        <!-- Back to Home button (aligned to the left and smaller size) -->
+        <div class="text-start mb-4 ">
+            <a href="../index.html" class="btn btn-secondary btn-sm btn-back">Back to Home</a>
+        </div>
+    
+        <div id="quizContent"></div>
+    
+        <div id="submitSection" class="text-center mt-4" style="display:none;">
+            <button id="submitQuiz" class="btn btn-success btn-lg btn-submit">Submit Quiz</button>
+        </div>
+    </div>
+    
+
+
+    <!-- Result Modal -->
+    <div class="modal fade" id="resultModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Quiz Result</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="text-center">
+                        <h2 id="scoreDisplay" class="mb-4"></h2>
+                    </div>
+                    <div id="detailedResults"></div>
+                </div>
+                <div class="modal-footer">
+                    <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                    <a href="../index.html" class="btn btn-primary btn-back">Back to Home</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+    $(document).ready(function() {
+        let questions = [];
+        let userAnswers = {};
+
+        // Load questions from JSON file
+        $.getJSON('questions.json', function(data) {
+            const subject = data.subjects[0];
+            if (subject) {
+                questions = subject.questions.slice(0, 20);
+                renderQuestions();
+            } else {
+                alert("No subjects or questions found in the data.");
+            }
+        }).fail(function(jqXHR, textStatus, errorThrown) {
+            console.error("Error loading questions:", textStatus, errorThrown);
+            alert("Failed to load quiz questions. Please try again.");
+        });
+
+        function renderQuestions() {
+            const quizContent = $('#quizContent');
+            quizContent.empty();
+
+            questions.forEach((question, index) => {
+                const card = $(`
+                    <div class="card question-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Question ${index + 1}</h5>
+                            <p>${question.text}</p>
+                            <div class="options"></div>
+                        </div>
+                    </div>
+                `);
+
+                const optionsContainer = card.find('.options');
+                question.options.forEach(option => {
+                    const btn = $(`
+                        <button class="btn btn-outline-primary option-btn w-100" 
+                                data-question-id="${question.id}" 
+                                data-option="${option.label}">
+                            ${option.label}. ${option.text}
+                        </button>
+                    `);
+
+                    btn.on('click', function() {
+                        card.find('.option-btn').removeClass('selected');
+                        $(this).addClass('selected');
+                        userAnswers[question.id] = option.label;
+
+                        if (Object.keys(userAnswers).length === questions.length) {
+                            $('#submitSection').fadeIn();
+                        }
+                    });
+
+                    optionsContainer.append(btn);
+                });
+
+                quizContent.append(card);
+            });
+        }
+
+        $('#submitQuiz').on('click', function() {
+            let score = 0;
+            let results = '';
+
+            questions.forEach((question, index) => {
+                const userAnswer = userAnswers[question.id];
+                const isCorrect = userAnswer === question.correct;
+                if (isCorrect) score++;
+
+                const correctOption = question.options.find(opt => opt.label === question.correct);
+                const userOption = question.options.find(opt => opt.label === userAnswer);
+
+                results += `
+                <div class="card mb-3 ${isCorrect ? 'border-success' : 'border-danger'}">
+                    <div class="card-header ${isCorrect ? 'bg-success text-white' : 'bg-danger text-white'}">
+                        Question ${index + 1} - ${isCorrect ? 'Correct' : 'Incorrect'}
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">
+                            <strong>Question:</strong> ${question.text} <br>
+                            <strong>Your Answer:</strong> ${userAnswer ? `${userAnswer}. ${userOption.text}` : 'No Answer'} <br>
+                            <strong>Correct Answer:</strong> ${question.correct}. ${correctOption.text}
+                        </p>
+                        <div class="detailed-explanation">
+                            <strong>Explanation:</strong>
+                            <p>${question.explanation}</p>
+                        </div>
+                    </div>
+                </div>`;
+            });
+
+            const percentage = Math.round((score / questions.length) * 100);
+
+            $('#scoreDisplay').html(`
+                <span class="score">Score: ${score}/${questions.length}</span>
+                <span class="score-persentage">Percentage: ${percentage}%</span>
+            `);
+            $('#detailedResults').html(results);
+            new bootstrap.Modal('#resultModal').show();
+        });
+    });
+    </script>
+</body>
+</html>

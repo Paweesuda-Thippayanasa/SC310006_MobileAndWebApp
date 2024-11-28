@@ -1,0 +1,129 @@
+body {
+    background-color: #f8f9fa;
+    font-family: 'Inter', 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    transition: background-color 0.3s ease;
+}
+
+.container {
+    max-width: 900px;
+    padding: 30px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+    margin-top: 40px;
+}
+
+.question-card {
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.question-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.option-btn {
+    text-align: left;
+    margin-bottom: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 1px solid #e9ecef;
+    padding: 12px 15px;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    color: #495057;
+    position: relative;
+    overflow: hidden;
+}
+
+.option-btn:hover {
+    background-color: #20c997;
+    color: #ffffff;
+    border-color: #20c997;
+}
+
+.option-btn.selected {
+    background-color: #20c997;
+    color: #ffffff;
+    border-color: #20c997;
+    box-shadow: 0 4px 10px rgba(32, 201, 151, 0.3);
+}
+
+.btn-submit, .btn-startquiz {
+    background-color: #ff5722;
+    color: #ffffff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.btn-submit:hover, .btn-startquiz:hover {
+    background-color: #ff7043;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(255, 87, 34, 0.3);
+}
+
+.score, .score-persentage {
+    background-color: #20c997;
+    color: #ffffff;
+    padding: 8px 15px;
+    font-weight: bold;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    margin: 0 10px;
+}
+
+.modal-content {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.modal-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.modal-footer {
+    background-color: #f8f9fa;
+    border-top: 1px solid #e9ecef;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+        margin-top: 20px;
+    }
+
+    .option-btn {
+        font-size: 0.9rem;
+        padding: 10px 12px;
+    }
+
+    .score, .score-persentage {
+        font-size: 1rem;
+        margin: 0 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+
+    .option-btn {
+        font-size: 0.8rem;
+        padding: 8px 10px;
+    }
+}

@@ -1,0 +1,249 @@
+{
+    "subjects": [
+        {
+            "name": "TOEIC Grammar",
+            "questions": [
+                {
+                    "id": 1,
+                    "text": "Both companies are ……. the same business.",
+                    "options": [
+                        {"label": "a", "text": "in"},
+                        {"label": "b", "text": "with"},
+                        {"label": "c", "text": "from"},
+                        {"label": "d", "text": "through"}
+                    ],
+                    "correct": "a",
+                    "explanation": "In is the correct preposition meaning involved or sharing."
+                },
+                {
+                    "id": 2,
+                    "text": "……. there were so many options, everyone was satisfied.",
+                    "options": [
+                        {"label": "a", "text": "If"},
+                        {"label": "b", "text": "Why"},
+                        {"label": "c", "text": "Because"},
+                        {"label": "d", "text": "When"}
+                    ],
+                    "correct": "c",
+                    "explanation": "Because is a subordinate conjunction showing cause and effect with an expected result."
+                },
+                {
+                    "id": 3,
+                    "text": "If they ……. more aware of the trends, they could have avoided bankruptcy.",
+                    "options": [
+                        {"label": "a", "text": "were"},
+                        {"label": "b", "text": "are"},
+                        {"label": "c", "text": "have been"},
+                        {"label": "d", "text": "had been"}
+                    ],
+                    "correct": "d",
+                    "explanation": "Had been is the correct past perfect verb for a past unreal condition in an if clause."
+                },
+                {
+                    "id": 4,
+                    "text": "Make checks ……. to the company.",
+                    "options": [
+                        {"label": "a", "text": "paid"},
+                        {"label": "b", "text": "payable"},
+                        {"label": "c", "text": "paying"},
+                        {"label": "d", "text": "pay"}
+                    ],
+                    "correct": "b",
+                    "explanation": "Payable is the shorter substitution for the relative clause which are paid."
+                },
+                {
+                    "id": 5,
+                    "text": "Ms. Bolton is both a strong manager ……. a skilled negotiator.",
+                    "options": [
+                        {"label": "a", "text": "or"},
+                        {"label": "b", "text": "with"},
+                        {"label": "c", "text": "and"},
+                        {"label": "d", "text": "though"}
+                    ],
+                    "correct": "c",
+                    "explanation": "The paired conjunction / adverb both … and is correct."
+                },
+                {
+                    "id": 6,
+                    "text": "……. the stockholders said the market was healthy, they refused to invest more money.",
+                    "options": [
+                        {"label": "a", "text": "Because"},
+                        {"label": "b", "text": "Although"},
+                        {"label": "c", "text": "In Addition"},
+                        {"label": "d", "text": "So"}
+                    ],
+                    "correct": "b",
+                    "explanation": "Although is the correct subordinate conjunction showing unexpected result."
+                },
+                {
+                    "id": 7,
+                    "text": "The seminar will adjourn ……. five o’clock.",
+                    "options": [
+                        {"label": "a", "text": "in"},
+                        {"label": "b", "text": "on"},
+                        {"label": "c", "text": "at"},
+                        {"label": "d", "text": "the"}
+                    ],
+                    "correct": "c",
+                    "explanation": "At is the correct preposition for a specific time."
+                },
+                {
+                    "id": 8,
+                    "text": "Marketing is important; ……. , we’re hiring a new public relations firm.",
+                    "options": [
+                        {"label": "a", "text": "therefore"},
+                        {"label": "b", "text": "even though"},
+                        {"label": "c", "text": "nevertheless"},
+                        {"label": "d", "text": "but"}
+                    ],
+                    "correct": "a",
+                    "explanation": "Therefore is the correct adverb transition word showing an expected result."
+                },
+                {
+                    "id": 9,
+                    "text": "The secretary had the messenger ……. the envelope as soon as possible.",
+                    "options": [
+                        {"label": "a", "text": "delivering"},
+                        {"label": "b", "text": "to deliver"},
+                        {"label": "c", "text": "deliver"},
+                        {"label": "d", "text": "delivered"}
+                    ],
+                    "correct": "c",
+                    "explanation": "Deliver is the correct form of the verb after the causative verb had."
+                },
+                {
+                    "id": 10,
+                    "text": "The board meetings usually ……. on time.",
+                    "options": [
+                        {"label": "a", "text": "have started"},
+                        {"label": "b", "text": "start"},
+                        {"label": "c", "text": "are starting"},
+                        {"label": "d", "text": "have been starting"}
+                    ],
+                    "correct": "b",
+                    "explanation": "Start is the correct verb to show habitual aspect with usually."
+                },
+                {
+                    "id": 11,
+                    "text": "Everyone was disappointed to hear that the company’s proposal was ……. .",
+                    "options": [
+                        {"label": "a", "text": "turned up"},
+                        {"label": "b", "text": "turned on"},
+                        {"label": "c", "text": "turned away"},
+                        {"label": "d", "text": "turned down"}
+                    ],
+                    "correct": "d",
+                    "explanation": "Turned down is the correct two-word verb showing rejection."
+                },
+                {
+                    "id": 12,
+                    "text": "Even though the exchange rate was high, we ……. from them.",
+                    "options": [
+                        {"label": "a", "text": "buy"},
+                        {"label": "b", "text": "must have bought"},
+                        {"label": "c", "text": "had to buy"},
+                        {"label": "d", "text": "had better to buy"}
+                    ],
+                    "correct": "c",
+                    "explanation": "Had to buy shows past necessity to complement the unexpected result from even though."
+                },
+                {
+                    "id": 13,
+                    "text": "……. Dr. Rossi hired the new assistant, the office has become more organized.",
+                    "options": [
+                        {"label": "a", "text": "When"},
+                        {"label": "b", "text": "Before"},
+                        {"label": "c", "text": "While"},
+                        {"label": "d", "text": "Since"}
+                    ],
+                    "correct": "d",
+                    "explanation": "Since is the correct subordinate conjunction showing cause and effect."
+                },
+                {
+                    "id": 14,
+                    "text": "Mr. Cutler will ……. as president.",
+                    "options": [
+                        {"label": "a", "text": "step up"},
+                        {"label": "b", "text": "step down"},
+                        {"label": "c", "text": "step from"},
+                        {"label": "d", "text": "step through"}
+                    ],
+                    "correct": "b",
+                    "explanation": "Step down is the logical choice meaning retire."
+                },
+                {
+                    "id": 15,
+                    "text": "Ms. Silva sent the memo ……. it had been approved.",
+                    "options": [
+                        {"label": "a", "text": "so"},
+                        {"label": "b", "text": "but"},
+                        {"label": "c", "text": "after"},
+                        {"label": "d", "text": "until"}
+                    ],
+                    "correct": "c",
+                    "explanation": "After is the correct subordinate conjunction showing a logical time relationship."
+                },
+                {
+                    "id": 16,
+                    "text": "It’s time to take advantage of current …….rates.",
+                    "options": [
+                        {"label": "a", "text": "interesting"},
+                        {"label": "b", "text": "interest"},
+                        {"label": "c", "text": "interested"},
+                        {"label": "d", "text": "interests"}
+                    ],
+                    "correct": "b",
+                    "explanation": "Interest is the correct noun modifying rates."
+                },
+                {
+                    "id": 17,
+                    "text": "The manager has to ……. the presentation until next week.",
+                    "options": [
+                        {"label": "a", "text": "put off"},
+                        {"label": "b", "text": "put with"},
+                        {"label": "c", "text": "put on"},
+                        {"label": "d", "text": "put through"}
+                    ],
+                    "correct": "a",
+                    "explanation": "Put off is the logical choice because it means postpone."
+                },
+                {
+                    "id": 18,
+                    "text": "When the directors ……. a profit, they’ll be satisfied.",
+                    "options": [
+                        {"label": "a", "text": "well see"},
+                        {"label": "b", "text": "sees"},
+                        {"label": "c", "text": "saw"},
+                        {"label": "d", "text": "see"}
+                    ],
+                    "correct": "d",
+                    "explanation": "See is the correct verb in the present simple form."
+                },
+                {
+                    "id": 19,
+                    "text": "We’re sure we’ll be able to ……. a solution to this issue soon.",
+                    "options": [
+                        {"label": "a", "text": "find"},
+                        {"label": "b", "text": "finded"},
+                        {"label": "c", "text": "finds"},
+                        {"label": "d", "text": "finding"}
+                    ],
+                    "correct": "a",
+                    "explanation": "Find is the correct verb in the present form."
+                },
+                {
+                    "id": 20,
+                    "text": "She ……. her account status, but she hasn’t yet responded to our email.",
+                    "options": [
+                        {"label": "a", "text": "reviewed"},
+                        {"label": "b", "text": "reviews"},
+                        {"label": "c", "text": "is reviewing"},
+                        {"label": "d", "text": "had reviewed"}
+                    ],
+                    "correct": "a",
+                    "explanation": "Reviewed is the past tense verb that indicates an action done before."
+                }
+            ]
+        }
+    ]
+}
