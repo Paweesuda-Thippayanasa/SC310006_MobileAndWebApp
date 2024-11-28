@@ -3,34 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TOEIC Grammar Quiz</title>
+    <title>Paweesuda Thippayanasa - Lab Collection</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="lab1/style.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f4f6f9;
+            font-family: 'Inter', 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            transition: background-color 0.3s ease;
+        }
+
+        .custom-container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: #ffffff;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+            border-radius: 15px;
+        }
+
+        .header-section {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #e9ecef;
+        }
+
+        .header-section h1 {
+            color: #2c3e50;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .header-section h2 {
+            color: #7f8c8d;
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+
+        .list-labs {
+            list-style: none;
+            padding: 0;
+        }
+
+        .lab-item {
+            margin-bottom: 15px;
+        }
+
+        .lab-link {
+            display: block;
+            padding: 15px 20px;
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            color: #2c3e50;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: 1px solid #e9ecef;
+        }
+
+        .lab-link:hover {
+            background-color: #20c997;
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(32, 201, 151, 0.2);
+        }
+
+        .lab-link .badge {
+            margin-left: 10px;
+            background-color: #2c3e50;
+            color: white;
+        }
+
+        @media (max-width: 576px) {
+            .custom-container {
+                margin: 20px 15px;
+                padding: 20px;
+            }
+
+            .lab-link {
+                padding: 12px 15px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <div class="quiz-intro text-center">
-            <h1 class="mb-4">TOEIC Grammar Quiz</h1>
-            
-            <div class="alert alert-info">
-                <h4>Quiz Details</h4>
-                <ul class="list-unstyled">
-                    <li>Total Questions: 20</li>
-                    <li>Subject: TOEIC Grammar</li>
-                    <li>Time Limit: Not Specified</li>
-                </ul>
-            </div>
-
-            <div class="quiz-instructions mb-4">
-                <h5>Instructions</h5>
-                <p>
-                    Read each question carefully and select the most appropriate answer. 
-                    You will receive immediate feedback after completing the quiz.
-                </p>
-            </div>
-
-            <a href="./lab1/quizpage.html" class="btn btn-primary btn-lg btn-startquiz">Start Quiz</a>
+    <div class="container custom-container">
+        <div class="header-section">
+            <h1>Paweesuda Thippayanasa</h1>
+            <h2>SC310006 Mobile and Web Application Development</h2>
         </div>
+
+        <ul class="list-labs">
+            <li class="lab-item">
+                <a href="./lab1/welcomeQuiz.html" class="lab-link">
+                    Lab 1: JQuery & Bootstrap <span class="badge">Web</span>
+                </a>
+            </li>
+            <!-- Add more labs as needed -->
+            <!-- <li class="lab-item">
+                <a href="#" class="lab-link disabled">
+                    More Labs Coming Soon <span class="badge bg-secondary">Upcoming</span>
+                </a>
+            </li> -->
+        </ul>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
