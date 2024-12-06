@@ -1,0 +1,79 @@
+body {
+    background-color: #f4f6f9;
+    font-family: 'Inter', 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    transition: background-color 0.3s ease;
+}
+
+.custom-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 15px;
+}
+
+.header-section {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #e9ecef;
+}
+
+.header-section h1 {
+    color: #2c3e50;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.header-section h2 {
+    color: #7f8c8d;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.list-labs {
+    list-style: none;
+    padding: 0;
+}
+
+.lab-item {
+    margin-bottom: 15px;
+}
+
+.lab-link {
+    display: block;
+    padding: 15px 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    color: #2c3e50;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 1px solid #e9ecef;
+}
+
+.lab-link:hover {
+    background-color: #20c997;
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(32, 201, 151, 0.2);
+}
+
+.lab-link .badge {
+    margin-left: 10px;
+    background-color: #2c3e50;
+    color: white;
+}
+
+@media (max-width: 576px) {
+    .custom-container {
+        margin: 20px 15px;
+        padding: 20px;
+    }
+
+    .lab-link {
+        padding: 12px 15px;
+    }
+}

@@ -1,0 +1,249 @@
+{
+    "subjects": [
+        {
+            "name": "Basic Math Problems",
+            "questions": [
+                {
+                    "id": 1,
+                    "text": "What is 2 + 3?",
+                    "options": [
+                        {"label": "a", "text": "4"},
+                        {"label": "b", "text": "5"},
+                        {"label": "c", "text": "6"},
+                        {"label": "d", "text": "7"}
+                    ],
+                    "correct": "b",
+                    "explanation": "2 + 3 equals 5."
+                },
+                {
+                    "id": 2,
+                    "text": "What is 8 - 3?",
+                    "options": [
+                        {"label": "a", "text": "4"},
+                        {"label": "b", "text": "5"},
+                        {"label": "c", "text": "6"},
+                        {"label": "d", "text": "7"}
+                    ],
+                    "correct": "b",
+                    "explanation": "8 - 3 equals 5."
+                },
+                {
+                    "id": 3,
+                    "text": "What is 5 × 2?",
+                    "options": [
+                        {"label": "a", "text": "10"},
+                        {"label": "b", "text": "15"},
+                        {"label": "c", "text": "20"},
+                        {"label": "d", "text": "25"}
+                    ],
+                    "correct": "a",
+                    "explanation": "5 × 2 equals 10."
+                },
+                {
+                    "id": 4,
+                    "text": "What is 20 ÷ 4?",
+                    "options": [
+                        {"label": "a", "text": "4"},
+                        {"label": "b", "text": "5"},
+                        {"label": "c", "text": "6"},
+                        {"label": "d", "text": "7"}
+                    ],
+                    "correct": "b",
+                    "explanation": "20 ÷ 4 equals 5."
+                },
+                {
+                    "id": 5,
+                    "text": "What is 6 + 7?",
+                    "options": [
+                        {"label": "a", "text": "12"},
+                        {"label": "b", "text": "13"},
+                        {"label": "c", "text": "14"},
+                        {"label": "d", "text": "15"}
+                    ],
+                    "correct": "b",
+                    "explanation": "6 + 7 equals 13."
+                },
+                {
+                    "id": 6,
+                    "text": "What is 15 - 5?",
+                    "options": [
+                        {"label": "a", "text": "8"},
+                        {"label": "b", "text": "9"},
+                        {"label": "c", "text": "10"},
+                        {"label": "d", "text": "11"}
+                    ],
+                    "correct": "c",
+                    "explanation": "15 - 5 equals 10."
+                },
+                {
+                    "id": 7,
+                    "text": "What is 3 × 4?",
+                    "options": [
+                        {"label": "a", "text": "11"},
+                        {"label": "b", "text": "12"},
+                        {"label": "c", "text": "13"},
+                        {"label": "d", "text": "14"}
+                    ],
+                    "correct": "b",
+                    "explanation": "3 × 4 equals 12."
+                },
+                {
+                    "id": 8,
+                    "text": "What is 24 ÷ 6?",
+                    "options": [
+                        {"label": "a", "text": "3"},
+                        {"label": "b", "text": "4"},
+                        {"label": "c", "text": "5"},
+                        {"label": "d", "text": "6"}
+                    ],
+                    "correct": "b",
+                    "explanation": "24 ÷ 6 equals 4."
+                },
+                {
+                    "id": 9,
+                    "text": "What is 9 + 8?",
+                    "options": [
+                        {"label": "a", "text": "16"},
+                        {"label": "b", "text": "17"},
+                        {"label": "c", "text": "18"},
+                        {"label": "d", "text": "19"}
+                    ],
+                    "correct": "b",
+                    "explanation": "9 + 8 equals 17."
+                },
+                {
+                    "id": 10,
+                    "text": "What is 10 - 3?",
+                    "options": [
+                        {"label": "a", "text": "6"},
+                        {"label": "b", "text": "7"},
+                        {"label": "c", "text": "8"},
+                        {"label": "d", "text": "9"}
+                    ],
+                    "correct": "b",
+                    "explanation": "10 - 3 equals 7."
+                },
+                {
+                    "id": 11,
+                    "text": "What is 2 × 6?",
+                    "options": [
+                        {"label": "a", "text": "10"},
+                        {"label": "b", "text": "11"},
+                        {"label": "c", "text": "12"},
+                        {"label": "d", "text": "13"}
+                    ],
+                    "correct": "c",
+                    "explanation": "2 × 6 equals 12."
+                },
+                {
+                    "id": 12,
+                    "text": "What is 18 ÷ 2?",
+                    "options": [
+                        {"label": "a", "text": "7"},
+                        {"label": "b", "text": "8"},
+                        {"label": "c", "text": "9"},
+                        {"label": "d", "text": "10"}
+                    ],
+                    "correct": "c",
+                    "explanation": "18 ÷ 2 equals 9."
+                },
+                {
+                    "id": 13,
+                    "text": "What is 7 + 5?",
+                    "options": [
+                        {"label": "a", "text": "10"},
+                        {"label": "b", "text": "11"},
+                        {"label": "c", "text": "12"},
+                        {"label": "d", "text": "13"}
+                    ],
+                    "correct": "c",
+                    "explanation": "7 + 5 equals 12."
+                },
+                {
+                    "id": 14,
+                    "text": "What is 12 - 4?",
+                    "options": [
+                        {"label": "a", "text": "6"},
+                        {"label": "b", "text": "7"},
+                        {"label": "c", "text": "8"},
+                        {"label": "d", "text": "9"}
+                    ],
+                    "correct": "c",
+                    "explanation": "12 - 4 equals 8."
+                },
+                {
+                    "id": 15,
+                    "text": "What is 4 × 3?",
+                    "options": [
+                        {"label": "a", "text": "10"},
+                        {"label": "b", "text": "11"},
+                        {"label": "c", "text": "12"},
+                        {"label": "d", "text": "13"}
+                    ],
+                    "correct": "c",
+                    "explanation": "4 × 3 equals 12."
+                },
+                {
+                    "id": 16,
+                    "text": "What is 16 ÷ 4?",
+                    "options": [
+                        {"label": "a", "text": "3"},
+                        {"label": "b", "text": "4"},
+                        {"label": "c", "text": "5"},
+                        {"label": "d", "text": "6"}
+                    ],
+                    "correct": "b",
+                    "explanation": "16 ÷ 4 equals 4."
+                },
+                {
+                    "id": 17,
+                    "text": "What is 8 + 6?",
+                    "options": [
+                        {"label": "a", "text": "13"},
+                        {"label": "b", "text": "14"},
+                        {"label": "c", "text": "15"},
+                        {"label": "d", "text": "16"}
+                    ],
+                    "correct": "b",
+                    "explanation": "8 + 6 equals 14."
+                },
+                {
+                    "id": 18,
+                    "text": "What is 15 - 9?",
+                    "options": [
+                        {"label": "a", "text": "5"},
+                        {"label": "b", "text": "6"},
+                        {"label": "c", "text": "7"},
+                        {"label": "d", "text": "8"}
+                    ],
+                    "correct": "b",
+                    "explanation": "15 - 9 equals 6."
+                },
+                {
+                    "id": 19,
+                    "text": "What is 9 × 1?",
+                    "options": [
+                        {"label": "a", "text": "8"},
+                        {"label": "b", "text": "9"},
+                        {"label": "c", "text": "10"},
+                        {"label": "d", "text": "11"}
+                    ],
+                    "correct": "b",
+                    "explanation": "9 × 1 equals 9."
+                },
+                {
+                    "id": 20,
+                    "text": "What is 20 ÷ 5?",
+                    "options": [
+                        {"label": "a", "text": "3"},
+                        {"label": "b", "text": "4"},
+                        {"label": "c", "text": "5"},
+                        {"label": "d", "text": "6"}
+                    ],
+                    "correct": "b",
+                    "explanation": "20 ÷ 5 equals 4."
+                }
+            ]
+        }
+    ]
+}
