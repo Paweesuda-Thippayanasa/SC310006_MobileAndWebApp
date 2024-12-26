@@ -50,6 +50,438 @@
                     ],
                     "correct": "a",
                     "explanation": "Water is composed of two hydrogen atoms and one oxygen atom, hence H2O."
+                },
+                {
+                    "id": 3,
+                    "text": "What gas do plants absorb from the atmosphere?",
+                    "options": [
+                        {
+                            "label": "a",
+                            "text": "Oxygen"
+                        },
+                        {
+                            "label": "b",
+                            "text": "Carbon Dioxide"
+                        },
+                        {
+                            "label": "c",
+                            "text": "Nitrogen"
+                        },
+                        {
+                            "label": "d",
+                            "text": "Hydrogen"
+                        }
+                    ],
+                    "correct": "b",
+                    "explanation": "Plants absorb carbon dioxide during photosynthesis."
+                },
+                {
+                    "id": 4,
+                    "text": "What force keeps us on the ground?",
+                    "options": [
+                        {
+                            "label": "a",
+                            "text": "Magnetism"
+                        },
+                        {
+                            "label": "b",
+                            "text": "Friction"
+                        },
+                        {
+                            "label": "c",
+                            "text": "Gravity"
+                        },
+                        {
+                            "label": "d",
+                            "text": "Electrostatic Force"
+                        }
+                    ],
+                    "correct": "c",
+                    "explanation": "Gravity is the force that attracts objects toward the center of the Earth."
+                },
+                {
+                    "id": 5,
+                    "text": "What is the boiling point of water at sea level?",
+                    "options": [
+                        {
+                            "label": "a",
+                            "text": "90\u00b0C"
+                        },
+                        {
+                            "label": "b",
+                            "text": "100\u00b0C"
+                        },
+                        {
+                            "label": "c",
+                            "text": "110\u00b0C"
+                        },
+                        {
+                            "label": "d",
+                            "text": "120\u00b0C"
+                        }
+                    ],
+                    "correct": "b",
+                    "explanation": "Water boils at 100\u00b0C (212\u00b0F) at standard atmospheric pressure."
+                },
+                {
+                    "id": 6,
+                    "text": "What is the largest organ in the human body?",
+                    "options": [
+                        {
+                            "label": "a",
+                            "text": "Liver"
+                        },
+                        {
+                            "label": "b",
+                            "text": "Heart"
+                        },
+                        {
+                            "label": "c",
+                            "text": "Skin"
+                        },
+                        {
+                            "label": "d",
+                            "text": "Lungs"
+                        }
+                    ],
+                    "correct": "c",
+                    "explanation": "The skin is the largest organ in the human body."
+                },
+                {
+                    "id": 7,
+                    "text": "What is the primary source of energy for the Earth?",
+                    "options": [
+                        {
+                            "label": "a",
+                            "text": "The Moon"
+                        },
+                        {
+                            "label": "b",
+                            "text": "The Sun"
+                        },
+                        {
+                            "label": "c",
+                            "text": "Wind"
+                        },
+                        {
+                            "label": "d",
+                            "text": "Fossil Fuels"
+                        }
+                    ],
+                    "correct": "b",
+                    "explanation": "The Sun is the primary source of energy for Earth."
+                },
+                {
+                    "id": 8,
+                    "text": "What is the process by which plants make their food?",
+                    "options": [
+                        {
+                            "label": "a",
+                            "text": "Respiration"
+                        },
+                        {
+                            "label": "b",
+                            "text": "Digestion"
+                        },
+                        {
+                            "label": "c",
+                            "text": "Photosynthesis"
+                        },
+                        {
+                            "label": "d",
+                            "text": "Evaporation"
+                        }
+                    ],
+                    "correct": "c",
+                    "explanation": "Photosynthesis is the process by which plants convert sunlight into food."
+                },
+                {
+                    "id": 9,
+                    "text": "What is the center of an atom called?",
+                    "options": [
+                        {
+                            "label": "a",
+                            "text": "Electron"
+                        },
+                        {
+                            "label": "b",
+                            "text": "Proton"
+                        },
+                        {
+                            "label": "c",
+                            "text": "Nucleus"
+                        },
+                        {
+                            "label": "d",
+                            "text": "Neutron"
+                        }
+                    ],
+                    "correct": "c",
+                    "explanation": "The nucleus is the center of an atom, containing protons and neutrons."
+                },
+                {
+                    "id": 10,
+                    "text": "What part of the cell contains genetic material?",
+                    "options": [
+                        {
+                            "label": "a",
+                            "text": "Nucleus"
+                        },
+                        {
+                            "label": "b",
+                            "text": "Mitochondria"
+                        },
+                        {
+                            "label": "c",
+                            "text": "Ribosome"
+                        },
+                        {
+                            "label": "d",
+                            "text": "Cytoplasm"
+                        }
+                    ],
+                    "correct": "a",
+                    "explanation": "The nucleus of a cell contains its genetic material."
+                },
+                {
+                    "id": 11,
+                    "text": "What is the main gas found in the air we breathe?",
+                    "options": [
+                        {
+                            "label": "a",
+                            "text": "Oxygen"
+                        },
+                        {
+                            "label": "b",
+                            "text": "Carbon Dioxide"
+                        },
+                        {
+                            "label": "c",
+                            "text": "Nitrogen"
+                        },
+                        {
+                            "label": "d",
+                            "text": "Hydrogen"
+                        }
+                    ],
+                    "correct": "c",
+                    "explanation": "Nitrogen makes up about 78% of the air we breathe."
+                },
+                {
+                    "id": 12,
+                    "text": "What is the smallest unit of life?",
+                    "options": [
+                        {
+                            "label": "a",
+                            "text": "Atom"
+                        },
+                        {
+                            "label": "b",
+                            "text": "Molecule"
+                        },
+                        {
+                            "label": "c",
+                            "text": "Cell"
+                        },
+                        {
+                            "label": "d",
+                            "text": "Organ"
+                        }
+                    ],
+                    "correct": "c",
+                    "explanation": "The cell is the smallest unit of life."
+                },
+                {
+                    "id": 13,
+                    "text": "What type of animal is a dolphin?",
+                    "options": [
+                        {
+                            "label": "a",
+                            "text": "Fish"
+                        },
+                        {
+                            "label": "b",
+                            "text": "Mammal"
+                        },
+                        {
+                            "label": "c",
+                            "text": "Reptile"
+                        },
+                        {
+                            "label": "d",
+                            "text": "Bird"
+                        }
+                    ],
+                    "correct": "b",
+                    "explanation": "Dolphins are mammals, not fish."
+                },
+                {
+                    "id": 14,
+                    "text": "What is the most abundant element in the universe?",
+                    "options": [
+                        {
+                            "label": "a",
+                            "text": "Oxygen"
+                        },
+                        {
+                            "label": "b",
+                            "text": "Hydrogen"
+                        },
+                        {
+                            "label": "c",
+                            "text": "Carbon"
+                        },
+                        {
+                            "label": "d",
+                            "text": "Helium"
+                        }
+                    ],
+                    "correct": "b",
+                    "explanation": "Hydrogen is the most abundant element in the universe."
+                },
+                {
+                    "id": 15,
+                    "text": "What is the largest planet in our solar system?",
+                    "options": [
+                        {
+                            "label": "a",
+                            "text": "Earth"
+                        },
+                        {
+                            "label": "b",
+                            "text": "Saturn"
+                        },
+                        {
+                            "label": "c",
+                            "text": "Jupiter"
+                        },
+                        {
+                            "label": "d",
+                            "text": "Neptune"
+                        }
+                    ],
+                    "correct": "c",
+                    "explanation": "Jupiter is the largest planet in our solar system."
+                },
+                {
+                    "id": 16,
+                    "text": "What is the hardest natural substance on Earth?",
+                    "options": [
+                        {
+                            "label": "a",
+                            "text": "Gold"
+                        },
+                        {
+                            "label": "b",
+                            "text": "Iron"
+                        },
+                        {
+                            "label": "c",
+                            "text": "Diamond"
+                        },
+                        {
+                            "label": "d",
+                            "text": "Platinum"
+                        }
+                    ],
+                    "correct": "c",
+                    "explanation": "Diamond is the hardest natural substance on Earth."
+                },
+                {
+                    "id": 17,
+                    "text": "What planet is closest to the Sun?",
+                    "options": [
+                        {
+                            "label": "a",
+                            "text": "Venus"
+                        },
+                        {
+                            "label": "b",
+                            "text": "Mercury"
+                        },
+                        {
+                            "label": "c",
+                            "text": "Earth"
+                        },
+                        {
+                            "label": "d",
+                            "text": "Mars"
+                        }
+                    ],
+                    "correct": "b",
+                    "explanation": "Mercury is the planet closest to the Sun."
+                },
+                {
+                    "id": 18,
+                    "text": "What is the main function of the roots of a plant?",
+                    "options": [
+                        {
+                            "label": "a",
+                            "text": "To produce food"
+                        },
+                        {
+                            "label": "b",
+                            "text": "To support the stem"
+                        },
+                        {
+                            "label": "c",
+                            "text": "To absorb water and nutrients"
+                        },
+                        {
+                            "label": "d",
+                            "text": "To store food"
+                        }
+                    ],
+                    "correct": "c",
+                    "explanation": "Roots absorb water and nutrients from the soil."
+                },
+                {
+                    "id": 19,
+                    "text": "What is the speed of light in a vacuum?",
+                    "options": [
+                        {
+                            "label": "a",
+                            "text": "300,000 km/s"
+                        },
+                        {
+                            "label": "b",
+                            "text": "150,000 km/s"
+                        },
+                        {
+                            "label": "c",
+                            "text": "250,000 km/s"
+                        },
+                        {
+                            "label": "d",
+                            "text": "350,000 km/s"
+                        }
+                    ],
+                    "correct": "a",
+                    "explanation": "The speed of light in a vacuum is approximately 300,000 kilometers per second."
+                },
+                {
+                    "id": 20,
+                    "text": "What is the chemical formula for table salt?",
+                    "options": [
+                        {
+                            "label": "a",
+                            "text": "NaCl"
+                        },
+                        {
+                            "label": "b",
+                            "text": "KCl"
+                        },
+                        {
+                            "label": "c",
+                            "text": "CaCl2"
+                        },
+                        {
+                            "label": "d",
+                            "text": "NaCO3"
+                        }
+                    ],
+                    "correct": "a",
+                    "explanation": "Table salt is chemically known as sodium chloride (NaCl)."
                 }
             ]
         }
