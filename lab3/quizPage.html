@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Science Quiz</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./style3.css">
+</head>
+<body>
+  <div id="root"></div>
+  <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/babel-standalone@6/babel.js"></script>
+
+  <script type="text/babel">
+    const { useState, useEffect } = React;
+
+    function App() {
+      const [quizData, setQuizData] = useState(null);
+      const [answers, setAnswers] = useState({});
+      const [showResult, setShowResult] = useState(false);
+      const [score, setScore] = useState(0);
+      const [quizResults, setQuizResults] = useState([]);
+
+      useEffect(() => {
+        fetch("./questions3.json")
+          .then(response => response.ok ? response.json() : Promise.reject("Failed to fetch"))
+          .then(setQuizData)
+          .catch(error => console.error("Error:", error));
+      }, []);
+
+      const handleOptionChange = (questionId, selectedOption) => {
+        setAnswers({ ...answers, [questionId]: selectedOption });
+      };
+
+      const handleSubmit = () => {
+        const results = quizData.subjects[0].questions.map((question, index) => {
+          const userAnswer = answers[question.id];
+          const isCorrect = userAnswer === question.correct;
+          const correctOption = question.options.find(opt => opt.label === question.correct);
+          const userOption = question.options.find(opt => opt.label === userAnswer);
+
+          return {
+            questionNumber: index + 1,
+            questionText: question.text,
+            isCorrect,
+            userAnswer: userAnswer ? `${userAnswer}. ${userOption.text}` : 'No Answer',
+            correctAnswer: `${question.correct}. ${correctOption.text}`,
+            explanation: question.explanation || "No explanation available"
+          };
+        });
+
+        setScore(results.filter(r => r.isCorrect).length);
+        setQuizResults(results);
+        setShowResult(true);
+      };
+
+      const isSubmitDisabled = quizData && quizData.subjects[0].questions.some(question => !answers[question.id]);
+
+      if (!quizData) {
+        return (
+          <div className="d-flex justify-content-center align-items-center" style={{height: "100vh"}}>
+            <div className="loading-spinner"></div>
+          </div>
+        );
+      }
+
+      return (
+        <div className="app-container">
+          <a href="./welcomepage.html" className="back-to-index">
+            ← Back 
+        </a>
+          <h1 className="quiz-title">Science Quiz</h1>
+
+          {showResult ? (
+            <div>
+              <a href="./welcomepage.html" className="back-to-index">
+                ← Back 
+            </a>
+              <div className="score-display">
+                Score: {score} / {quizData.subjects[0].questions.length}
+              </div>
+              {quizResults.map((result) => (
+                <div key={result.questionNumber} className="result-card">
+                  <div className="d-flex justify-content-between align-items-start mb-3">
+                    <h5 className="mb-0">Question {result.questionNumber}</h5>
+                    <span className={`badge ${result.isCorrect ? 'bg-success' : 'bg-danger'}`}>
+                      {result.isCorrect ? 'Correct' : 'Incorrect'}
+                    </span>
+                  </div>
+                  <p className="question-text">{result.questionText}</p>
+                  <div className="mb-2">
+                    <strong>Your Answer:</strong> {result.userAnswer}
+                  </div>
+                  <div className="mb-2">
+                    <strong>Correct Answer:</strong> {result.correctAnswer}
+                  </div>
+                  <div className="explanation-box">
+                    <strong>Explanation:</strong> {result.explanation}
+                  </div>
+                </div>
+              ))}
+            </div>
+          ) : (
+            <div>
+              {quizData.subjects[0].questions.map((question) => (
+                <div key={question.id} className="question-card">
+                  <p className="question-text">{question.id}. {question.text}</p>
+                  {question.options.map((option) => (
+                    <div className="option-container" key={option.label}>
+                      <input
+                        type="radio"
+                        name={`question-${question.id}`}
+                        id={`question-${question.id}-option-${option.label}`}
+                        value={option.label}
+                        checked={answers[question.id] === option.label}
+                        onChange={() => handleOptionChange(question.id, option.label)}
+                        className="option-input"
+                      />
+                      <label 
+                        className="option-label" 
+                        htmlFor={`question-${question.id}-option-${option.label}`}
+                      >
+                        {option.label}. {option.text}
+                      </label>
+                    </div>
+                  ))}
+                </div>
+              ))}
+              <div className="text-center">
+                <button 
+                  className="submit-button" 
+                  onClick={handleSubmit} 
+                  disabled={isSubmitDisabled}
+                >
+                  Submit Quiz
+                </button>
+              </div>
+            </div>
+          )}
+        </div>
+      );
+    }
+
+    const root = ReactDOM.createRoot(document.getElementById("root"));
+    root.render(<App />);
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

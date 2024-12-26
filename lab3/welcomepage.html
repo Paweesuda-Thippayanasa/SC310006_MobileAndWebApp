@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 3 : ReactJs</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style3.css">
+
+</head>
+
+<body>
+
+
+    <div id="root"></div>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/babel-standalone@6/babel.js"></script>
+
+    <script type="text/babel">
+        // React Component
+        function App() {
+            return (
+                <div className="container quiz-container">
+                    <a href="../index.html" className="back-to-index">
+                        ← Back to All Labs
+                    </a>
+                    <div className="quiz-intro text-center">
+                        <h1 className="">Science Quiz</h1>
+
+                        <div className="alert alert-info">
+                            <h4>Quiz Details</h4>
+                            <ul className="list-unstyled">
+                                <li>Total Questions: 20</li>
+                                <li>Subject: Science</li>
+                                <li>Time Limit: Not Specified</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div classNmae="quiz-instructions mb-4">
+                        <h5>Instructions</h5>
+                        <p>
+                            Read each question carefully and select the most appropriate answer. 
+                            You will receive immediate feedback after completing the quiz.
+                        </p>
+                    </div>
+        
+                    <a href="./quizPage.html" className="btn btn-primary btn-lg btn-startquiz">Start Quiz</a>
+
+                </div>
+            );
+        }
+
+        // Render to the DOM
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<App />);
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

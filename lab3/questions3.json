@@ -1,0 +1,57 @@
+{
+    "subjects": [
+        {
+            "name": "Extended Science Quiz",
+            "questions": [
+                {
+                    "id": 1,
+                    "text": "What planet is known as the Red Planet?",
+                    "options": [
+                        {
+                            "label": "a",
+                            "text": "Earth"
+                        },
+                        {
+                            "label": "b",
+                            "text": "Mars"
+                        },
+                        {
+                            "label": "c",
+                            "text": "Jupiter"
+                        },
+                        {
+                            "label": "d",
+                            "text": "Saturn"
+                        }
+                    ],
+                    "correct": "b",
+                    "explanation": "Mars is often called the Red Planet because of its reddish appearance."
+                },
+                {
+                    "id": 2,
+                    "text": "What is the chemical symbol for water?",
+                    "options": [
+                        {
+                            "label": "a",
+                            "text": "H2O"
+                        },
+                        {
+                            "label": "b",
+                            "text": "O2"
+                        },
+                        {
+                            "label": "c",
+                            "text": "CO2"
+                        },
+                        {
+                            "label": "d",
+                            "text": "H2"
+                        }
+                    ],
+                    "correct": "a",
+                    "explanation": "Water is composed of two hydrogen atoms and one oxygen atom, hence H2O."
+                }
+            ]
+        }
+    ]
+}
