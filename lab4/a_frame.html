@@ -91,6 +91,17 @@
             </a-text>
         </a-entity>
 
+        <!-- Orbiting Image (Circular) -->
+        <a-entity position="0 2.5 -5">
+            <a-entity geometry="primitive: circle" 
+                      material="src: url(./my_pics.jpg); shader: flat; transparent: true;" 
+                      position="3 0 0" 
+                      rotation="0 0 0" 
+                      scale="1 1 0.5"
+                      animation="property: position; to: 0 2.5 0; dir: alternate; loop: true; dur: 5000; easing: easeInOutQuad">
+            </a-entity>
+        </a-entity>
+
         <!-- Planets and Stars -->
         <a-sphere position="-2 2 -6" 
                   radius="0.8" 
