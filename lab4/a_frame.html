@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astronomy-Themed Introduction | A-Frame</title>
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+    <style>
+        /* Loading screen styles */
+        .loading {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-family: Arial, sans-serif;
+            font-size: 1.5rem;
+            z-index: 9999;
+        }
+
+        .description {
+            margin-top: 5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="loading">Loading Your Cosmic Experience...</div>
+    <a-scene>
+        <!-- Background Sky -->
+        <a-sky src="./bg2.jpg"
+               animation="property: material.opacity; from: 0; to: 1; dur: 2000; easing: easeOutQuad">
+        </a-sky>
+
+        <!-- 3D Avatar Model -->
+        <a-entity
+            position="0 1.5 -3"
+            scale="0.5 0.5 0.5"
+            gltf-model="https://cdn.glitch.global/36698139-436b-45f9-94c1-0f632c074755/student-avatar.glb"
+            animation="property: rotation; to: 0 360 0; loop: true; dur: 15000; easing: linear"
+            animation__hover="property: position; dir: alternate; dur: 2000; easing: easeInOutQuad; loop: true; to: 0 1.8 -3">
+        </a-entity>
+
+        <!-- Information Text -->
+        <a-entity position="0 2.5 -5">
+            <!-- Student ID -->
+            <a-text value="Student ID: 653380137-5" 
+                    position="0 0 0" 
+                    color="#fff" 
+                    align="center" 
+                    width="6"
+                    line-height="60"
+                    animation="property: opacity; from: 0; to: 1; dur: 1500; delay: 500">
+            </a-text>
+
+            <!-- Name -->
+            <a-text value="Paweesuda Thippayanasa" 
+                    position="0 -0.5 0" 
+                    color="#fff" 
+                    align="center" 
+                    width="6"
+                    line-height="60"
+                    animation="property: opacity; from: 0; to: 1; dur: 1500; delay: 1000"
+                    animation__scale="property: scale; dir: alternate; dur: 2000; easing: easeInOutQuad; loop: true; from: 1 1 1; to: 1.1 1.1 1.1">
+            </a-text>
+
+            <!-- Role -->
+            <a-text value="Computer Science Student of Collage Of Computing, KKU" 
+                    position="0 -1 0" 
+                    color="#fff" 
+                    align="center" 
+                    width="4"
+                    line-height="60"
+                    animation="property: opacity; from: 0; to: 1; dur: 1500; delay: 1500">
+            </a-text>
+
+            <!-- Additional Description -->
+            <a-text value="I am like an astronaut, exploring new challenges and seeking to discover the unknown. My passion for space represents my curiosity and love for innovation."
+                    position="0 -2.4 0" 
+                    color="#7fdbff" 
+                    align="center" 
+                    width="7"
+                    line-height="60"
+                    class="description"
+                    animation="property: opacity; from: 0; to: 1; dur: 1500; delay: 2000"
+                    animation__color="property: color; dir: alternate; dur: 3000; easing: easeInOutQuad; loop: true; from: #fff; to: #7fdbff">
+            </a-text>
+        </a-entity>
+
+        <!-- Planets and Stars -->
+        <a-sphere position="-2 2 -6" 
+                  radius="0.8" 
+                  color="#4CC3D9"
+                  animation="property: rotation; to: 360 0 360; loop: true; dur: 8000; easing: linear">
+        </a-sphere>
+
+        <a-sphere position="3 1 -7" 
+                  radius="1" 
+                  color="#EF2D5E"
+                  animation="property: position; dir: alternate; dur: 3000; easing: easeInOutQuad; loop: true; to: 3 1.5 -7">
+        </a-sphere>
+
+        <!-- Shooting Star Animation -->
+        <a-entity geometry="primitive: sphere; radius: 0.2"
+                  material="color: #fff"
+                  position="5 5 -10"
+                  animation="property: position; from: 5 5 -10; to: -5 -5 -15; dur: 2000; easing: easeInOutQuad; loop: true">
+        </a-entity>
+
+        <!-- Particle System (Stardust) -->
+        <a-entity particle-system="preset: snow; particleCount: 500; size: 0.3; color: #ffffff"></a-entity>
+
+        <!-- Lighting -->
+        <a-light type="ambient" intensity="1"></a-light>
+        <a-light type="point" intensity="1.5" position="0 4 -3"></a-light>
+    </a-scene>
+
+    <script>
+        // Remove loading screen when the scene is loaded
+        document.querySelector('a-scene').addEventListener('loaded', function () {
+            document.querySelector('.loading').style.display = 'none';
+        });
+    </script>
+</body>
+</html>
