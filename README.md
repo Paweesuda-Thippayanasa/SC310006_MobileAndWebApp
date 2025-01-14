@@ -15,4 +15,4 @@ Repository นี้รวบรวมงานแลปและแบบฝึ
   - `lab1_JQ_Bootstrap`: โค้ดและเอกสารสำหรับแลป 1 Jquery and bootstrap
   - `lab2_VueJS`: โค้ดและเอกสารสำหรับแลป 2 Vue
   - `lab3_reactJs`: โค้ดและเอกสารสำหรับแลป 3 ReactJs
-  - - `lab4_aframe`: โค้ดและเอกสารสำหรับแลป 4 A-Frame
+  -  `lab4_aframe`: โค้ดและเอกสารสำหรับแลป 4 A-Frame
